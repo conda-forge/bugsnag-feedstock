@@ -1,17 +1,17 @@
 {% set name = "bugsnag" %}
-{% set version = "3.6.0" %}
+{% set version = "3.6.1" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: 67b8c01719e92f193f8424595a94e3a527bc0f9fcb7f2bc47a20af87de81929d
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 8878437aa44ec485cecb255742035b3b98a6c7e7d167a943b5fbe597b2f8f7f9
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -32,7 +32,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE.txt
-  summary: "Automatic error monitoring for django, flask, etc."
+  summary: Automatic error monitoring for django, flask, etc.
   dev_url: https://github.com/bugsnag/bugsnag-python
 
 extra:
