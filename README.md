@@ -5,7 +5,7 @@ Home: https://bugsnag.com/
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Automatic error monitoring for django, flask, etc.
 
