@@ -1,11 +1,11 @@
-About bugsnag
-=============
+About bugsnag-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bugsnag-feedstock/blob/main/LICENSE.txt)
 
 Home: https://bugsnag.com/
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/bugsnag-feedstock/blob/main/LICENSE.txt)
 
 Summary: Automatic error monitoring for django, flask, etc.
 
