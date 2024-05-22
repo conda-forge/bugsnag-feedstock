@@ -1,5 +1,5 @@
 {% set name = "bugsnag" %}
-{% set version = "4.7.0" %}
+{% set version = "4.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: fb0d252368285d89df5f6281f833453d797a5023a1839a35ef38206a5c985ebf
+  sha256: 98408fe17d4a7f300a56535407a6448b9844d9b528c44527908868fc3646e873
 
 build:
   number: 0
