@@ -6,23 +6,25 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 98408fe17d4a7f300a56535407a6448b9844d9b528c44527908868fc3646e873
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
   host:
     - pip
-    - python >=3
+    - python {{ python_min }}
   run:
-    - python >=3
+    - python >={{ python_min }}
     - webob
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - bugsnag
 
