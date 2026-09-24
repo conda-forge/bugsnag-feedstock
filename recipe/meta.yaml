@@ -1,13 +1,13 @@
 {% set name = "bugsnag" %}
-{% set version = "4.9.1" %}
+{% set version = "4.9.2" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 2817577a47e253985fd0d9646d21ebe5094deabf40c1a5938567541c5f40ad79
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 33933c82ace14a51921e0b5f6796725bc0445ce99e2015b63312fda4bb4d9ec2
 
 build:
   number: 0
